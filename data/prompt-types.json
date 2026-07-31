@@ -1,0 +1,31 @@
+{
+  "$schema": "./schemas/prompt-types.schema.json",
+  "version": 1,
+  "types": [
+    {
+      "id": "general",
+      "label": "Uniwersalny",
+      "required_sections": ["ROLE", "GOAL", "CONTEXT", "CONSTRAINTS", "TASK", "OUTPUT"]
+    },
+    {
+      "id": "code",
+      "label": "Kod / IT",
+      "required_sections": ["GOAL", "CONTEXT", "SCOPE", "CONSTRAINTS", "TASK", "VALIDATION", "DONE"]
+    },
+    {
+      "id": "image",
+      "label": "Grafika",
+      "required_sections": ["POSITIVE PROMPT", "COMPOSITION", "STYLE", "LIGHTING", "COLOR", "NEGATIVE PROMPT"]
+    },
+    {
+      "id": "command",
+      "label": "Komenda / operacja",
+      "required_sections": ["PREREQUISITES", "ACTIONS", "SAFETY", "VERIFICATION", "ROLLBACK", "REPORT"]
+    },
+    {
+      "id": "analysis",
+      "label": "Analiza / research",
+      "required_sections": ["QUESTION", "EVIDENCE", "ASSUMPTIONS", "CRITERIA", "METHOD", "OUTPUT", "DECISION RULE"]
+    }
+  ]
+}

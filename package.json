@@ -1,0 +1,31 @@
+{
+  "name": "@sojka-pro/raw-to-pro",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Minimal RAW → PRO AI prompt generator by SOJKA.PRO™.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local --watch server.js",
+    "start": "node --env-file-if-exists=.env.local server.js",
+    "test": "node --test",
+    "lint": "node --check server.js && node --check lib/prompt-builder.js && node --check public/app.js",
+    "check": "npm run lint && npm test"
+  },
+  "keywords": [
+    "prompt-engineering",
+    "prompt-generator",
+    "openai",
+    "codex",
+    "ai-tools",
+    "sojka-pro"
+  ],
+  "author": "Łukasz Sojka / SOJKA.PRO™",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "express": "5.2.1",
+    "openai": "7.2.0"
+  }
+}

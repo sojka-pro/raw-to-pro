@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RAW → PRO — minimalistyczny generator profesjonalnych promptów od SOJKA.PRO™."
+    />
+    <title>RAW → PRO | SOJKA.PRO™</title>
+    <link rel="icon" href="/assets/sojka-pro-symbol.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <a class="brand" href="/" aria-label="RAW to PRO — strona główna">
+        <img src="/assets/sojka-pro-symbol.svg" alt="" />
+        <span>RAW → PRO</span>
+      </a>
+      <span class="signature">by SOJKA.PRO™</span>
+    </header>
+
+    <main class="shell">
+      <section class="intro">
+        <p class="eyebrow">RAW INPUT → MASTER PROMPT</p>
+        <h1>Z chaosu do precyzyjnego polecenia.</h1>
+        <p>
+          Wklej notatki, burzę mózgu lub surowe dane. Otrzymasz profesjonalny,
+          gotowy do skopiowania prompt.
+        </p>
+      </section>
+
+      <form id="generator" class="workspace">
+        <section class="panel">
+          <div class="panel-title">
+            <label for="raw">01 / RAW</label>
+            <span id="raw-count">0 / 12000</span>
+          </div>
+          <textarea
+            id="raw"
+            name="raw"
+            maxlength="12000"
+            placeholder="Wklej chaotyczny prompt, pomysł, polecenie, notatki lub dane…"
+            required
+          ></textarea>
+
+          <details>
+            <summary>Opcjonalny kontekst</summary>
+            <textarea
+              id="context"
+              name="context"
+              maxlength="4000"
+              placeholder="Projekt, odbiorca, ograniczenia, format, kryteria jakości…"
+            ></textarea>
+          </details>
+
+          <div class="controls">
+            <label>
+              Typ
+              <select name="type">
+                <option value="general">Uniwersalny</option>
+                <option value="code">Kod / IT</option>
+                <option value="image">Grafika</option>
+                <option value="command">Komenda / operacja</option>
+                <option value="analysis">Analiza / research</option>
+              </select>
+            </label>
+            <label>
+              Narzędzie
+              <select name="target">
+                <option value="universal">Dowolny chat AI</option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="codex">Codex</option>
+                <option value="claude">Claude Code</option>
+                <option value="opencode">OpenCode</option>
+                <option value="cursor">Cursor</option>
+                <option value="vscode">VS Code AI</option>
+                <option value="copilot">GitHub Copilot</option>
+                <option value="image">Generator grafiki</option>
+              </select>
+            </label>
+            <label>
+              Poziom
+              <select name="depth">
+                <option value="concise">Szybki</option>
+                <option value="full" selected>PRO</option>
+                <option value="master">MASTER</option>
+              </select>
+            </label>
+            <label>
+              Język
+              <select name="language">
+                <option value="pl">PL</option>
+                <option value="en">EN</option>
+              </select>
+            </label>
+          </div>
+
+          <button id="generate" class="primary" type="submit">
+            Generuj prompt PRO
+          </button>
+          <p class="privacy-note">
+            Nie wklejaj sekretów. Treść jest wysyłana do skonfigurowanego API
+            wyłącznie w celu wygenerowania odpowiedzi.
+          </p>
+        </section>
+
+        <section class="panel output-panel" aria-live="polite">
+          <div class="panel-title">
+            <span>02 / PRO</span>
+            <button id="copy" class="copy" type="button" disabled>Kopiuj</button>
+          </div>
+          <pre id="output" tabindex="0">Twój profesjonalny prompt pojawi się tutaj.</pre>
+          <p id="status" role="status"></p>
+        </section>
+      </form>
+    </main>
+
+    <footer class="shell">
+      <span>v0.1.0 MVP</span>
+      <span>© 2026 SOJKA.PRO™</span>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

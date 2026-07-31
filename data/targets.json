@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "targets": [
+    "universal",
+    "chatgpt",
+    "codex",
+    "claude",
+    "opencode",
+    "cursor",
+    "vscode",
+    "copilot",
+    "image"
+  ]
+}
