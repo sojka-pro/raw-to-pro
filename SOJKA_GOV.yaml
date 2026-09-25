@@ -1,0 +1,36 @@
+schema_version: 1
+system: SOJKA.GOV
+status: INHERITED_CONTROL_PLANE
+snapshot: 2026-09-25
+
+control_plane:
+  repository: sojka-pro/sojka-pro
+  branch: main
+  registry: registry/projects.yaml
+  admin_commands: docs/admin/ADMIN_COMMANDS_V1.md
+  owner_ui_contract: docs/admin/OWNER_RESPONSE_UX_V1.md
+
+owner_ui:
+  inherited_from: sojka-pro/sojka-pro@main
+  recommendation_copy_paste_required: true
+  no_action_value: "[ok]"
+  material_footer:
+    - NOW
+    - OWNER
+    - WAITING_FOR
+    - ADMIN_ACTION
+    - RECOMMENDATION_COPY_PASTE
+    - NEXT
+
+local:
+  repository: sojka-pro/raw-to-pro
+  class: RETAIN_AUDIT_FOR_LAB_INTEGRATION
+  role: PUBLIC_PRODUCT
+
+rules:
+  github_main_canonical: true
+  project_local_git_wins_locally: true
+  root_governance_controls_authority: true
+  fail_closed_on_uncertainty: true
+
+note: "Public governance pointer only. No private SOJKA.PRO state is duplicated here."
