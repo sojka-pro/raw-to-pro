@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="RAW → PRO — minimalistyczny generator profesjonalnych promptów od SOJKA.PRO™."
-    />
+    <meta name="description" content="RAW → PRO — minimalistyczny generator profesjonalnych promptów od SOJKA.PRO™." />
     <title>RAW → PRO | SOJKA.PRO™</title>
     <link rel="icon" href="/assets/sojka-pro-symbol.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/style.css" />
@@ -24,10 +21,7 @@
       <section class="intro">
         <p class="eyebrow">RAW INPUT → MASTER PROMPT</p>
         <h1>Z chaosu do precyzyjnego polecenia.</h1>
-        <p>
-          Wklej notatki, burzę mózgu lub surowe dane. Otrzymasz profesjonalny,
-          gotowy do skopiowania prompt.
-        </p>
+        <p>Wklej notatki, burzę mózgu lub surowe dane. Otrzymasz profesjonalny, gotowy do skopiowania prompt.</p>
       </section>
 
       <form id="generator" class="workspace">
@@ -36,22 +30,11 @@
             <label for="raw">01 / RAW</label>
             <span id="raw-count">0 / 12000</span>
           </div>
-          <textarea
-            id="raw"
-            name="raw"
-            maxlength="12000"
-            placeholder="Wklej chaotyczny prompt, pomysł, polecenie, notatki lub dane…"
-            required
-          ></textarea>
+          <textarea id="raw" name="raw" maxlength="12000" placeholder="Wklej chaotyczny prompt, pomysł, polecenie, notatki lub dane…" required></textarea>
 
           <details>
             <summary>Opcjonalny kontekst</summary>
-            <textarea
-              id="context"
-              name="context"
-              maxlength="4000"
-              placeholder="Projekt, odbiorca, ograniczenia, format, kryteria jakości…"
-            ></textarea>
+            <textarea id="context" name="context" maxlength="4000" placeholder="Projekt, odbiorca, ograniczenia, format, kryteria jakości…"></textarea>
           </details>
 
           <div class="controls">
@@ -70,9 +53,11 @@
               <select name="target">
                 <option value="universal">Dowolny chat AI</option>
                 <option value="chatgpt">ChatGPT</option>
+                <option value="chatgpt_work">ChatGPT Work</option>
                 <option value="codex">Codex</option>
                 <option value="claude">Claude Code</option>
                 <option value="opencode">OpenCode</option>
+                <option value="opencode_muse">OpenCode + Muse Spark 1.3</option>
                 <option value="cursor">Cursor</option>
                 <option value="vscode">VS Code AI</option>
                 <option value="copilot">GitHub Copilot</option>
@@ -96,13 +81,8 @@
             </label>
           </div>
 
-          <button id="generate" class="primary" type="submit">
-            Generuj prompt PRO
-          </button>
-          <p class="privacy-note">
-            Nie wklejaj sekretów. Treść jest wysyłana do skonfigurowanego API
-            wyłącznie w celu wygenerowania odpowiedzi.
-          </p>
+          <button id="generate" class="primary" type="submit">Generuj prompt PRO</button>
+          <p class="privacy-note">Nie wklejaj sekretów. Treść jest wysyłana do skonfigurowanego API wyłącznie w celu wygenerowania odpowiedzi.</p>
         </section>
 
         <section class="panel output-panel" aria-live="polite">

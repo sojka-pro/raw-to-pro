@@ -8,11 +8,20 @@ Oficjalny projekt **SOJKA.PRO™**.
 
 ## Obsługiwane zastosowania
 
-- ChatGPT i inne ogólne chaty AI;
+- ChatGPT i ChatGPT Work;
 - Codex, Claude Code, OpenCode, Cursor i asystenci VS Code;
+- dedykowany target OpenCode + Muse Spark 1.3;
 - GitHub Copilot;
 - generatory grafiki;
 - zadania analityczne, operacyjne i techniczne.
+
+## Protocol packs
+
+Repo może przechowywać gotowe systemy zbudowane standardem RAW → PRO.
+
+- [MAGICK//AI OS — Chaos Magick Codex](packs/magick-ai-os/README.md) — pełny,
+  dwujęzyczny protokół chaos magick + AI operator, z profilami dla
+  OpenCode + Muse Spark 1.3 i ChatGPT Work.
 
 ## Uruchomienie
 
@@ -53,13 +62,14 @@ promptów ani treści wejściowej.
 - [standard promptów](docs/PROMPT_STANDARD.md)
 - [architektura](docs/ARCHITECTURE.md)
 - [roadmap](docs/ROADMAP.md)
-- [master prompt](MASTER_PROMPT.md)
+- [master prompt v2](MASTER_PROMPT.md)
 - [bezpieczeństwo](SECURITY.md)
 - [prywatność](PRIVACY.md)
 
 ## Status
 
-`0.1.0` — MVP przeznaczony do lokalnego uruchomienia i wczesnej walidacji.
+`0.1.0` — działający MVP generatora. Protocol packs rozwijają zastosowania bez
+komplikowania podstawowej architektury aplikacji.
 
 ## Prawa
 

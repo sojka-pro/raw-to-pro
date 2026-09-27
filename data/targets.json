@@ -1,11 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "targets": [
     "universal",
     "chatgpt",
+    "chatgpt_work",
     "codex",
     "claude",
     "opencode",
+    "opencode_muse",
     "cursor",
     "vscode",
     "copilot",
