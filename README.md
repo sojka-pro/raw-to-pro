@@ -1,3 +1,5 @@
+> CURRENT SCOPE 2026-10-12: [SOC_SCOPE.md](SOC_SCOPE.md) overrides historical ACTIVE/WIP/NEXT labels for organization lifecycle. HIBERNATED / REUSE_ON_DEMAND; no runtime reactivation. Technical instructions below apply if work in their scope is explicitly requested.
+
 # RAW → PRO
 
 Minimalistyczny generator, który zamienia chaotyczne notatki, burzę mózgu,
